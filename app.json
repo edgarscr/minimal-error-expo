@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "name": "Minimal",
+    "slug": "myreax-minimal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "platforms": ["android", "ios"],
+    "ios": {
+      "bundleIdentifier": "com.ecarrera92.Minimal",
+      "runtimeVersion": "1.0.0",
+      "jsEngine": "jsc",
+      "supportsTablet": true,
+      "requireFullScreen": true,
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "config": {
+        "googleMapsApiKey": "iosMapKey"
+      },
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": ["myreax"]
+          }
+        ],
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": ["location", "fetch", "remote-notification"],
+        "NSLocationWhenInUseUsageDescription": "Turning on your location services allows us to show you the school bus is nearby",
+        "NSPhotoLibraryUsageDescription": "App requires Photo Library, to update profile photo"
+      },
+      "entitlements": {
+        "com.apple.developer.networking.wifi-info": true
+      },
+      "minimumOS": "12.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./google-services.json",
+      "enableProguardInReleaseBuilds": true,
+
+      "permissions": ["ACCESS_FINE_LOCATION", "NOTIFICATIONS"]
+    },
+    "plugins": [
+      "expo-secure-store",
+      "@react-native-firebase/app",
+      "@react-native-firebase/crashlytics",
+      "@react-native-firebase/perf",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "15.1",
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "33f47289-582b-4a1c-95bf-5152ea431cd0"
+      }
+    },
+    "owner": "reaxiumapps"
+  }
+}

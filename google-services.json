@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1082118637283",
+    "project_id": "myreax-minimal",
+    "storage_bucket": "myreax-minimal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082118637283:android:5d6001c5b208702fba27d6",
+        "android_client_info": {
+          "package_name": "com.minimal.myreax"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASCaOlwtGjFCshCHgTtKBNHurOH98Yk6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
